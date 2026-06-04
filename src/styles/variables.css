@@ -1,0 +1,104 @@
+/* ===============================
+   ZENTRIQ DESIGN TOKENS + BASE
+   =============================== */
+
+:root {
+  --primary: #7c3aed;
+  --primary-2: #8b5cf6;
+  --secondary: #38bdf8;
+  --success: #86efac;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --bg: #050816;
+  --bg-2: #081028;
+  --surface: rgba(255, 255, 255, 0.055);
+  --surface-2: rgba(255, 255, 255, 0.09);
+  --border: rgba(255, 255, 255, 0.11);
+
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --soft: #cbd5e1;
+  --purple-soft: #c4b5fd;
+
+  --radius-sm: 14px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(124, 58, 237, 0.25), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(59, 130, 246, 0.18), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(168, 85, 247, 0.13), transparent 35%),
+    #050816;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  top: -200px;
+  left: -200px;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.15);
+  filter: blur(180px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  right: -150px;
+  bottom: -200px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.12);
+  filter: blur(180px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(124, 58, 237, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.14), transparent 30%),
+    #050816;
+}
+
+.main {
+  width: 100%;
+  padding: 34px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.12), transparent 30%),
+    #081028;
+}
+
+.page-motion {
+  position: relative;
+  z-index: 2;
+}

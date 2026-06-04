@@ -1,0 +1,270 @@
+/* RESPONSIVE SYSTEM */
+
+@media (max-width: 1400px) {
+  .cards,
+  .premium-analytics-summary,
+  .projects-grid-v2,
+  .notes-grid-v2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .app {
+    grid-template-columns: 230px 1fr;
+  }
+
+  .sidebar {
+    padding: 26px 18px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .search-wrapper,
+  .search-pill {
+    flex: 1;
+    min-width: 260px;
+  }
+
+  .dashboard-cinema-hero,
+  .ai-layout,
+  .focus-layout,
+  .calendar-columns,
+  .premium-analytics-grid,
+  .notes-toolbar,
+  .projects-grid-v2,
+  .notes-grid-v2,
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-cinema-hero,
+  .ai-hero,
+  .focus-hero,
+  .calendar-hero,
+  .activity-hero,
+  .notes-hero,
+  .settings-hero,
+  .analytics-hero,
+  .projects-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .cards,
+  .tasks-stats,
+  .calendar-stats,
+  .notes-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .board-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .board-column {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main {
+    padding: 22px;
+  }
+
+  .topbar-actions {
+    gap: 8px;
+  }
+
+  .profile-box {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .dashboard-cinema-hero,
+  .ai-hero,
+  .focus-hero,
+  .calendar-hero,
+  .activity-hero,
+  .notes-hero,
+  .settings-hero,
+  .analytics-hero,
+  .projects-hero {
+    padding: 26px;
+    border-radius: 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .dashboard-cinema-hero h1,
+  .ai-hero h2,
+  .focus-hero h2,
+  .calendar-hero h2,
+  .activity-hero h2,
+  .notes-hero h2,
+  .settings-hero h2,
+  .analytics-hero h2,
+  .projects-hero h2 {
+    font-size: 30px;
+  }
+
+  .cards,
+  .tasks-stats,
+  .calendar-stats,
+  .notes-stats,
+  .premium-analytics-summary,
+  .projects-grid-v2,
+  .notes-grid-v2,
+  .ai-actions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .task-form,
+  .filters,
+  .project-create-bar,
+  .notes-input-wrap,
+  .notes-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .task-right,
+  .task-actions {
+    width: 100%;
+  }
+
+  .task-actions {
+    justify-content: flex-end;
+  }
+
+  .notification-dropdown,
+  .search-dropdown {
+    left: 0;
+    right: auto;
+    width: min(360px, 90vw);
+  }
+
+  .focus-ring {
+    width: 260px;
+    height: 260px;
+  }
+
+  .focus-ring h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 16px;
+  }
+
+  .sidebar nav {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-area h2 {
+    font-size: 22px;
+  }
+
+  .topbar h1 {
+    font-size: 28px;
+  }
+
+  .search-wrapper,
+  .search-pill {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .command-open-btn,
+  .icon-btn,
+  .live-clock {
+    height: 46px;
+  }
+
+  .profile-box {
+    height: auto;
+    padding: 12px;
+  }
+
+  .dashboard-cinema-hero,
+  .ai-hero,
+  .focus-hero,
+  .calendar-hero,
+  .activity-hero,
+  .notes-hero,
+  .settings-hero,
+  .analytics-hero,
+  .projects-hero {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-actions,
+  .focus-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions button,
+  .focus-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card,
+  .panel,
+  .project-card-v2,
+  .note-card-v2,
+  .setting-card-pro {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .task-menu {
+    right: 0;
+    width: 210px;
+  }
+}

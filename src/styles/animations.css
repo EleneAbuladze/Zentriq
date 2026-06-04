@@ -1,0 +1,72 @@
+/* Animations are currently kept in additions.css to preserve cascade order.
+   When the UI is finalized, we can move @keyframes here safely. */
+
+   .page-motion {
+  animation: pageEnter 0.35s ease;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* PREMIUM HOVER SYSTEM */
+
+.sidebar nav a {
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.sidebar nav a:hover {
+  transform: translateX(8px);
+  box-shadow: 0 12px 35px rgba(124,58,237,0.25);
+}
+
+.project-card-v2:hover,
+.note-card-v2:hover,
+.setting-card-pro:hover,
+.task-item:hover,
+.calendar-pro-card:hover,
+.timeline-card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
+
+button {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.profile-avatar:hover {
+  transform: rotate(8deg) scale(1.08);
+  transition: 0.3s ease;
+}
+
+.live-clock:hover {
+  box-shadow: 0 0 30px rgba(124,58,237,0.25);
+}
+
+.task-stat-card:hover,
+.card:hover {
+  box-shadow:
+    0 20px 60px rgba(124,58,237,0.15),
+    0 0 40px rgba(56,189,248,0.08);
+}

@@ -1,0 +1,265 @@
+/* THEME SYSTEM */
+
+:root {
+  --primary: #7c3aed;
+  --secondary: #38bdf8;
+  --danger: #ef4444;
+}
+
+/* DARK MODE */
+.app.dark {
+  color: #f8fafc;
+  background: #050816;
+}
+
+/* LIGHT MODE */
+.app.light {
+  color: #0f172a;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(124,58,237,0.14), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(56,189,248,0.14), transparent 30%),
+    #f8fafc;
+}
+
+.app.light .main {
+  background:
+    radial-gradient(circle at top left, rgba(124,58,237,0.12), transparent 30%),
+    #f8fafc;
+}
+
+.app.light .sidebar {
+  background: rgba(255,255,255,0.82);
+  border-right: 1px solid rgba(15,23,42,0.08);
+}
+
+.app.light .logo-area h2,
+.app.light .topbar h1,
+.app.light .section-title h2,
+.app.light h1,
+.app.light h2,
+.app.light h3,
+.app.light h4 {
+  color: #0f172a !important;
+  -webkit-text-fill-color: initial;
+}
+
+.app.light .welcome-text,
+.app.light p,
+.app.light span,
+.app.light small {
+  color: #64748b;
+}
+
+.app.light .card,
+.app.light .panel,
+.app.light .task-item,
+.app.light .project-card-v2,
+.app.light .note-card-v2,
+.app.light .setting-card-pro,
+.app.light .calendar-pro-card,
+.app.light .timeline-card,
+.app.light .ai-insight-card,
+.app.light .ai-action-card,
+.app.light .focus-tip-card,
+.app.light .board-column {
+  background: rgba(255,255,255,0.78) !important;
+  border: 1px solid rgba(15,23,42,0.08) !important;
+  color: #0f172a;
+  box-shadow:
+    0 24px 70px rgba(15,23,42,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.app.light input,
+.app.light select {
+  background: rgba(255,255,255,0.9) !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(15,23,42,0.12) !important;
+}
+
+.app.light input::placeholder {
+  color: #94a3b8;
+}
+
+.app.light .search-pill,
+.app.light .live-clock,
+.app.light .profile-box,
+.app.light .icon-btn {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(15,23,42,0.08);
+  color: #0f172a;
+}
+
+.app.light .sidebar nav a {
+  color: #64748b;
+}
+
+.app.light .sidebar nav a:hover,
+.app.light .sidebar nav a.active {
+  color: white;
+}
+
+.app.light .dashboard-cinema-hero,
+.app.light .settings-hero,
+.app.light .notes-hero,
+.app.light .projects-hero,
+.app.light .calendar-hero,
+.app.light .activity-hero,
+.app.light .focus-hero,
+.app.light .ai-hero,
+.app.light .analytics-hero {
+  background:
+    linear-gradient(135deg, rgba(124,58,237,0.16), rgba(56,189,248,0.12)),
+    rgba(255,255,255,0.78);
+  border: 1px solid rgba(15,23,42,0.08);
+}
+
+.app.light .hero-content h1,
+.app.light .dashboard-cinema-hero h1,
+.app.light .settings-hero h2,
+.app.light .notes-hero h2,
+.app.light .projects-hero h2,
+.app.light .calendar-hero h2,
+.app.light .activity-hero h2,
+.app.light .focus-hero h2,
+.app.light .ai-hero h2,
+.app.light .analytics-hero h2 {
+  color: #0f172a !important;
+}
+
+.app.light .task-menu,
+.app.light .notification-dropdown,
+.app.light .search-dropdown,
+.app.light .command-modal {
+  background: rgba(255,255,255,0.96);
+  border: 1px solid rgba(15,23,42,0.1);
+  color: #0f172a;
+}
+
+.app.light .task-menu button,
+.app.light .search-result,
+.app.light .command-item {
+  color: #0f172a;
+}
+
+.app.light .priority.high {
+  background: rgba(239,68,68,0.12);
+  color: #dc2626;
+}
+
+.app.light .priority.medium {
+  background: rgba(234,179,8,0.16);
+  color: #a16207;
+}
+
+.app.light .priority.low {
+  background: rgba(34,197,94,0.14);
+  color: #15803d;
+}
+
+.app.light ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.app.light ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7c3aed, #38bdf8);
+}
+
+/* LIGHT MODE FIXES */
+
+.app.light .score-circle::before,
+.app.light .project-progress-ring {
+  background:
+    radial-gradient(circle at center, #ffffff 55%, transparent 56%) !important;
+}
+
+.app.light .score-circle h1,
+.app.light .project-progress-ring strong {
+  color: #0f172a !important;
+}
+
+.app.light .notification-dropdown {
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(15, 23, 42, 0.1) !important;
+  box-shadow:
+    0 30px 90px rgba(15, 23, 42, 0.14),
+    0 0 60px rgba(124, 58, 237, 0.12);
+}
+
+.app.light .notification-row {
+  background: rgba(248, 250, 252, 0.95) !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+}
+
+.app.light .notification-row p,
+.app.light .notification-header h3 {
+  color: #0f172a !important;
+}
+
+.app.light .notification-row span {
+  color: #64748b !important;
+}
+
+.app.light .hero-command-card {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+}
+
+.app.light .hero-command-card h3,
+.app.light .hero-command-card span {
+  color: #0f172a !important;
+}
+
+.app.light .hero-command-card p {
+  color: #64748b !important;
+}
+
+.app.light .project-card-v2 {
+  background: rgba(255, 255, 255, 0.88) !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+}
+
+.app.light .project-card-header h3 {
+  color: #0f172a !important;
+}
+
+.app.light .project-footer,
+.app.light .project-footer span {
+  color: #64748b !important;
+}
+
+.app.light .project-progress-ring {
+  box-shadow:
+    inset 0 0 28px rgba(124, 58, 237, 0.08),
+    0 0 45px rgba(124, 58, 237, 0.12);
+}
+
+.app.light .search-pill input {
+  color: #0f172a !important;
+}
+
+.app.light .search-pill input::placeholder {
+  color: #64748b !important;
+}
+
+.app.light .analytics-score {
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.9), rgba(124,58,237,0.12)) !important;
+}
+
+.app.light .landing-content h1,
+.landing-content h1 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
+  text-shadow:
+    0 0 40px rgba(124,58,237,0.35),
+    0 12px 60px rgba(0,0,0,0.35);
+}
+
+.app.light .landing-content p,
+.landing-content p {
+  color: #e2e8f0 !important;
+}
